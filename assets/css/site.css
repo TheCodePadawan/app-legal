@@ -123,6 +123,44 @@ img {
   color: var(--paper);
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.lang-switch a {
+  color: var(--paper-dim);
+  text-decoration: none;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+}
+
+.lang-switch a:hover,
+.lang-switch a[aria-current="page"] {
+  color: var(--paper);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.lang-switch a:not(:last-child)::after {
+  content: "|";
+  margin-left: 0.35rem;
+  color: var(--line);
+  font-weight: 400;
+  pointer-events: none;
+}
+
+
 .hero {
   padding: clamp(3.5rem, 10vw, 7rem) 0 clamp(2.5rem, 6vw, 4rem);
 }

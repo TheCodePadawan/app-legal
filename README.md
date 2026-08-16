@@ -10,8 +10,12 @@ their policies are ready.
   privacy.html / terms.html  ← redirects → AthleteR (bookmarks)
   assets/js/config.js        ← edit publisher + per-app notes HERE
   apps/
-    athleter/privacy.html    ← full policy (ready)
-    athleter/terms.html
+    athleter/privacy.html       ← EN (canonical store URL)
+    athleter/privacy-de.html    ← DE Datenschutzerklärung
+    athleter/privacy-fr.html    ← FR Politique de confidentialité
+    athleter/terms.html         ← EN (canonical store URL)
+    athleter/terms-de.html      ← DE Nutzungsbedingungen
+    athleter/terms-fr.html      ← FR Conditions d'utilisation
 ```
 
 **Not legal advice.** Have a lawyer review before store submission.
@@ -27,16 +31,21 @@ their policies are ready.
 
 ## AthleteR
 
-AthleteR has full English text under `apps/athleter/` (mirrored from the app).
-Fill remaining bracketed placeholders in `config.js` before store submission.
+AthleteR has full EN / DE / FR text under `apps/athleter/` (mirrored from the app).
+Each legal page includes an EN|DE|FR language switcher. Fill remaining bracketed
+placeholders in `config.js` before store submission.
 
 ## Store URLs
 
-After Pages is live:
+After Pages is live (English remains the canonical store URL):
 
 ```
 https://<user>.github.io/<repo>/apps/athleter/privacy.html
+https://<user>.github.io/<repo>/apps/athleter/privacy-de.html
+https://<user>.github.io/<repo>/apps/athleter/privacy-fr.html
 https://<user>.github.io/<repo>/apps/athleter/terms.html
+https://<user>.github.io/<repo>/apps/athleter/terms-de.html
+https://<user>.github.io/<repo>/apps/athleter/terms-fr.html
 ```
 
 ## Preview
