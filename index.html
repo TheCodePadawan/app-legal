@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Legal — AthleteR</title>
+    <meta
+      name="description"
+      content="Privacy Policy and Terms of Service for AthleteR."
+    />
+    <link rel="icon" href="assets/images/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/site.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap inner">
+        <a class="brand" href="index.html">
+          <img src="assets/images/icon.png" alt="" width="36" height="36" />
+          <span>Legal</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#apps">Apps</a>
+          <a href="apps/athleter/privacy.html">AthleteR</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero wrap">
+        <p class="hero-kicker">Publisher legal hub</p>
+        <h1>AthleteR<br />legal pages.</h1>
+        <p class="lede">
+          Privacy Policy and Terms of Service for AthleteR store listings.
+          More apps can be added here later when their policies are ready.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="apps/athleter/privacy.html"
+            >AthleteR privacy</a
+          >
+          <a class="btn btn-ghost" href="apps/athleter/terms.html"
+            >AthleteR terms</a
+          >
+        </div>
+      </section>
+
+      <section class="wrap panel" aria-labelledby="urls">
+        <h2 id="urls">Store URLs (after GitHub Pages)</h2>
+        <p>
+          AthleteR Privacy Policy:
+          <code>…/apps/athleter/privacy.html</code>
+        </p>
+        <p>
+          AthleteR Terms of Service:
+          <code>…/apps/athleter/terms.html</code>
+        </p>
+        <p>
+          Company-wide placeholders live in
+          <code>assets/js/config.js</code> → <code>publisher</code>. Per-app
+          details live under <code>apps.&lt;id&gt;</code>.
+        </p>
+      </section>
+
+      <section class="wrap" id="apps" aria-labelledby="apps-title">
+        <h2
+          id="apps-title"
+          style="
+            font-family: var(--font-display);
+            letter-spacing: -0.02em;
+            margin: 0 0 1rem;
+          "
+        >
+          Apps
+        </h2>
+        <div class="app-grid" data-app-catalog></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap inner">
+        <span
+          >&copy;
+          <span data-legal="companyLegalName">[Company Legal Name]</span></span
+        >
+        <span>Edit <code>assets/js/config.js</code></span>
+      </div>
+    </footer>
+
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/site.js"></script>
+  </body>
+</html>
