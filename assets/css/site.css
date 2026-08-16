@@ -239,6 +239,33 @@ img {
   margin-top: 2rem;
 }
 
+.cta-groups {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  max-width: 40rem;
+}
+
+.cta-group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.cta-group legend {
+  padding: 0;
+  margin: 0 0 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fog);
+}
+
+.cta-group .cta-row {
+  margin-top: 0;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
