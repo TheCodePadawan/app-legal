@@ -17,6 +17,7 @@ their policies are ready.
     athleter/terms-de.html      ← DE Nutzungsbedingungen
     athleter/terms-fr.html      ← FR Conditions d'utilisation
     athleter/delete-account.html  ← Google Play account deletion
+    athleter/delete-data.html     ← Google Play partial data deletion
 ```
 
 **Not legal advice.** Have a lawyer review before store submission.
@@ -48,6 +49,7 @@ https://<user>.github.io/<repo>/apps/athleter/terms.html
 https://<user>.github.io/<repo>/apps/athleter/terms-de.html
 https://<user>.github.io/<repo>/apps/athleter/terms-fr.html
 https://<user>.github.io/<repo>/apps/athleter/delete-account.html  ← Google Play account deletion
+https://<user>.github.io/<repo>/apps/athleter/delete-data.html     ← Google Play partial data deletion
 ```
 
 ## Preview
