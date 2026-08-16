@@ -6,7 +6,7 @@
     <title>Legal — AthleteR</title>
     <meta
       name="description"
-      content="Privacy Policy and Terms of Service for AthleteR."
+      content="Privacy Policy, Terms of Service, and data deletion for AthleteR."
     />
     <link rel="icon" href="assets/images/icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,8 +25,9 @@
           <span>Legal</span>
         </a>
         <nav class="nav" aria-label="Primary">
-          <a href="#apps">Apps</a>
-          <a href="apps/athleter/privacy.html">AthleteR</a>
+          <a href="apps/athleter/">AthleteR</a>
+          <a href="apps/athleter/privacy.html">Privacy</a>
+          <a href="apps/athleter/terms.html">Terms</a>
         </nav>
       </div>
     </header>
@@ -36,33 +37,56 @@
         <p class="hero-kicker">Publisher legal hub</p>
         <h1>AthleteR<br />legal pages.</h1>
         <p class="lede">
-          Privacy Policy and Terms of Service for AthleteR store listings.
-          More apps can be added here later when their policies are ready.
+          Policies and deletion instructions for store listings — one hub,
+          separate URLs where Google Play requires them.
         </p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="apps/athleter/privacy.html"
-            >AthleteR privacy</a
-          >
-          <a class="btn btn-ghost" href="apps/athleter/terms.html"
-            >AthleteR terms</a
-          >
+
+        <div class="cta-groups">
+          <fieldset class="cta-group">
+            <legend>Policies</legend>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="apps/athleter/privacy.html"
+                >Privacy Policy</a
+              >
+              <a class="btn btn-ghost" href="apps/athleter/terms.html"
+                >Terms of Service</a
+              >
+            </div>
+          </fieldset>
+
+          <fieldset class="cta-group">
+            <legend>Your data</legend>
+            <div class="cta-row">
+              <a class="btn btn-ghost" href="apps/athleter/delete-account.html"
+                >Delete account</a
+              >
+              <a class="btn btn-ghost" href="apps/athleter/delete-data.html"
+                >Delete data (keep account)</a
+              >
+            </div>
+          </fieldset>
         </div>
       </section>
 
       <section class="wrap panel" aria-labelledby="urls">
-        <h2 id="urls">Store URLs (after GitHub Pages)</h2>
+        <h2 id="urls">Play Console URLs</h2>
+        <ul>
+          <li>
+            Privacy:
+            <code>…/apps/athleter/privacy.html</code>
+          </li>
+          <li>
+            Delete account:
+            <code>…/apps/athleter/delete-account.html</code>
+          </li>
+          <li>
+            Delete data:
+            <code>…/apps/athleter/delete-data.html</code>
+          </li>
+        </ul>
         <p>
-          AthleteR Privacy Policy:
-          <code>…/apps/athleter/privacy.html</code>
-        </p>
-        <p>
-          AthleteR Terms of Service:
-          <code>…/apps/athleter/terms.html</code>
-        </p>
-        <p>
-          Company-wide placeholders live in
-          <code>assets/js/config.js</code> → <code>publisher</code>. Per-app
-          details live under <code>apps.&lt;id&gt;</code>.
+          Edit company placeholders in
+          <code>assets/js/config.js</code>.
         </p>
       </section>
 
@@ -87,7 +111,9 @@
           >&copy;
           <span data-legal="companyLegalName">[Company Legal Name]</span></span
         >
-        <span>Edit <code>assets/js/config.js</code></span>
+        <span
+          ><a href="apps/athleter/">AthleteR legal home</a></span
+        >
       </div>
     </footer>
 
