@@ -52,6 +52,20 @@
     }
   });
 
+  document.querySelectorAll('a[data-legal-tel="phone"]').forEach((a) => {
+    const phone = publisher.phone;
+    if (phone && !looksPlaceholder(phone)) {
+      a.href = "tel:" + String(phone).replace(/[\s().-]/g, "");
+    }
+  });
+
+  document.querySelectorAll('a[data-legal-href="website"]').forEach((a) => {
+    const url = publisher.website;
+    if (url && !looksPlaceholder(url)) {
+      a.href = url;
+    }
+  });
+
   const catalog = document.querySelector("[data-app-catalog]");
   if (catalog) {
     const order = Object.keys(apps);
@@ -68,7 +82,7 @@
         '<span class="badge"></span>' +
         "</div>" +
         '<p class="app-card-tagline"></p>' +
-        '<p class="app-card-links"><span>Privacy</span> · <span>Terms</span></p>';
+        '<p class="app-card-links"><span>Privacy</span> · <span>Terms</span> · <span>Impressum</span></p>';
       card.querySelector("h3").textContent = item.name;
       const badge = card.querySelector(".badge");
       badge.textContent = item.status === "ready" ? "Ready" : "Draft";

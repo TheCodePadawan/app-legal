@@ -426,8 +426,27 @@ img {
 }
 
 .doc-main p,
-.doc-main li {
+.doc-main li,
+.doc-main dd {
   color: var(--paper-dim);
+}
+
+.doc-main dl {
+  margin: 0 0 1.25rem;
+}
+
+.doc-main dt {
+  margin-top: 0.95rem;
+  font-weight: 700;
+  color: var(--paper);
+}
+
+.doc-main dt:first-child {
+  margin-top: 0;
+}
+
+.doc-main dd {
+  margin: 0.2rem 0 0;
 }
 
 .doc-main ul {

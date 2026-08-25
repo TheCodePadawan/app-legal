@@ -1,13 +1,13 @@
 # Publisher legal site (GitHub Pages)
 
-Privacy Policy + Terms for **AthleteR** store listings. Shared company config in
-one place; per-app policy URLs under `apps/`. More apps can be added later when
-their policies are ready.
+Privacy Policy, Terms, and Impressum for **AthleteR** store listings. Shared
+company config in one place; per-app policy URLs under `apps/`. More apps can
+be added later when their policies are ready.
 
 ```
 /
   index.html                 ← hub
-  privacy.html / terms.html  ← redirects → AthleteR (bookmarks)
+  privacy.html / terms.html / impressum.html  ← redirects → AthleteR
   assets/js/config.js        ← edit publisher + per-app notes HERE
   apps/
     athleter/privacy.html       ← EN (canonical store URL)
@@ -16,6 +16,9 @@ their policies are ready.
     athleter/terms.html         ← EN (canonical store URL)
     athleter/terms-de.html      ← DE Nutzungsbedingungen
     athleter/terms-fr.html      ← FR Conditions d'utilisation
+    athleter/impressum.html     ← EN legal notice
+    athleter/impressum-de.html  ← DE Impressum (§ 5 DDG) — legally relevant
+    athleter/impressum-fr.html  ← FR mentions légales
     athleter/delete-account.html  ← Google Play account deletion
     athleter/delete-data.html     ← Google Play partial data deletion
 ```
@@ -27,19 +30,25 @@ their policies are ready.
 `assets/js/config.js` → `publisher`:
 
 - company name, business type, country
-- contact email / address
+- represented by (owner / managing director)
+- contact email / address / phone
+- website
+- VAT ID and commercial register (if a limited company; leave placeholder if not)
 - governing law, liability cap
 - DPO (or leave bracketed)
 
+Orange dashed text on pages comes from values that still start with `[`.
+
 ## AthleteR
 
-AthleteR has full EN / DE / FR text under `apps/athleter/` (mirrored from the app).
-Each legal page includes an EN|DE|FR language switcher. Fill remaining bracketed
-placeholders in `config.js` before store submission.
+AthleteR has full EN / DE / FR text under `apps/athleter/`. Each legal page
+includes an EN|DE|FR language switcher. Fill remaining bracketed placeholders
+in `config.js` before relying on these pages in Germany (Impressum) or for
+store submission.
 
 ## Store URLs
 
-After Pages is live (English remains the canonical store URL):
+After Pages is live (English remains the canonical Play store URL for privacy):
 
 ```
 https://<user>.github.io/<repo>/apps/athleter/privacy.html
@@ -48,6 +57,9 @@ https://<user>.github.io/<repo>/apps/athleter/privacy-fr.html
 https://<user>.github.io/<repo>/apps/athleter/terms.html
 https://<user>.github.io/<repo>/apps/athleter/terms-de.html
 https://<user>.github.io/<repo>/apps/athleter/terms-fr.html
+https://<user>.github.io/<repo>/apps/athleter/impressum.html
+https://<user>.github.io/<repo>/apps/athleter/impressum-de.html  ← German Impressum
+https://<user>.github.io/<repo>/apps/athleter/impressum-fr.html
 https://<user>.github.io/<repo>/apps/athleter/delete-account.html  ← Google Play account deletion
 https://<user>.github.io/<repo>/apps/athleter/delete-data.html     ← Google Play partial data deletion
 ```
