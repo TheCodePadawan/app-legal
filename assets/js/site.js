@@ -89,7 +89,7 @@
         '<span class="badge"></span>' +
         "</div>" +
         '<p class="app-card-tagline"></p>' +
-        '<p class="app-card-links"><span>Privacy</span> · <span>Terms</span></p>';
+        '<p class="app-card-links"><span>Legal home</span> · <span>Privacy</span> · <span>Deletion</span></p>';
       card.querySelector("h3").textContent = item.name;
       const badge = card.querySelector(".badge");
       badge.textContent = item.status === "ready" ? "Ready" : "Draft";

@@ -6,7 +6,7 @@
     <title>Legal — publisher hub</title>
     <meta
       name="description"
-      content="Legal pages for our apps: privacy, terms, and Impressum."
+      content="Legal hub: open an app for privacy, terms, and account deletion."
     />
     <link rel="icon" href="assets/images/icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,9 +36,15 @@
         <p class="hero-kicker">Publisher legal hub</p>
         <h1>Legal pages<br />for our apps.</h1>
         <p class="lede">
-          Company details are shared. Privacy, terms, and store URLs live
-          under each app.
+          This page is only the index. Each app has its own legal home —
+          privacy, terms, and Play deletion URLs live there.
         </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="apps/athleter/"
+            >AthleteR legal home</a
+          >
+          <a class="btn btn-ghost" href="impressum-de.html">Impressum</a>
+        </div>
       </section>
 
       <section class="wrap" id="apps" aria-labelledby="apps-title">
@@ -47,21 +53,15 @@
           style="
             font-family: var(--font-display);
             letter-spacing: -0.02em;
-            margin: 0 0 1rem;
+            margin: 0 0 0.5rem;
           "
         >
           Apps
         </h2>
-        <div class="app-grid" data-app-catalog></div>
-      </section>
-
-      <section class="wrap panel" aria-labelledby="edit">
-        <h2 id="edit">Company placeholders</h2>
-        <p>
-          Edit name, address, and contact once in
-          <code>assets/js/config.js</code> → <code>publisher</code>. Orange
-          dashed text on any page still needs a real value.
+        <p class="lede" style="margin: 0 0 1.25rem; font-size: 1rem">
+          Open an app’s legal home. More apps can be added here later.
         </p>
+        <div class="app-grid" data-app-catalog></div>
       </section>
     </main>
 
