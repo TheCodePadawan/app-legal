@@ -1,8 +1,9 @@
 # Publisher legal site (GitHub Pages)
 
-Privacy Policy, Terms, and Impressum for **AthleteR** store listings. Shared
-company config in one place; per-app policy URLs under `apps/`. More apps can
-be added later when their policies are ready.
+Privacy Policy, Terms, Data Processing Agreement (AVV), and Impressum for
+**AthleteR** store listings. Shared company config in one place; per-app
+policy URLs under `apps/`. More apps can be added later when their policies
+are ready.
 
 ```
 /
@@ -16,6 +17,9 @@ be added later when their policies are ready.
     athleter/terms.html         ← EN (canonical store URL)
     athleter/terms-de.html      ← DE Nutzungsbedingungen
     athleter/terms-fr.html      ← FR Conditions d'utilisation
+    athleter/avv.html           ← EN Data Processing Agreement (convenience translation)
+    athleter/avv-de.html        ← DE Auftragsverarbeitungsvertrag (Art. 28 DSGVO) — legally controlling
+    athleter/avv-fr.html        ← FR Accord de traitement des données
     athleter/impressum.html     ← EN legal notice
     athleter/impressum-de.html  ← DE Impressum (§ 5 DDG) — legally relevant
     athleter/impressum-fr.html  ← FR mentions légales
@@ -57,6 +61,9 @@ https://<user>.github.io/<repo>/apps/athleter/privacy-fr.html
 https://<user>.github.io/<repo>/apps/athleter/terms.html
 https://<user>.github.io/<repo>/apps/athleter/terms-de.html
 https://<user>.github.io/<repo>/apps/athleter/terms-fr.html
+https://<user>.github.io/<repo>/apps/athleter/avv.html
+https://<user>.github.io/<repo>/apps/athleter/avv-de.html         ← legally controlling text
+https://<user>.github.io/<repo>/apps/athleter/avv-fr.html
 https://<user>.github.io/<repo>/apps/athleter/impressum.html
 https://<user>.github.io/<repo>/apps/athleter/impressum-de.html  ← German Impressum
 https://<user>.github.io/<repo>/apps/athleter/impressum-fr.html
