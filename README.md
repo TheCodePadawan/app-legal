@@ -23,6 +23,9 @@ are ready.
     athleter/impressum.html     ← EN legal notice
     athleter/impressum-de.html  ← DE Impressum (§ 5 DDG) — legally relevant
     athleter/impressum-fr.html  ← FR mentions légales
+    athleter/parental-consent-template.html     ← EN — practical tool for coaches, not a legal doc about us
+    athleter/parental-consent-template-de.html  ← DE
+    athleter/parental-consent-template-fr.html  ← FR
     athleter/delete-account.html  ← Google Play account deletion
     athleter/delete-data.html     ← Google Play partial data deletion
 ```
@@ -67,6 +70,9 @@ https://<user>.github.io/<repo>/apps/athleter/avv-fr.html
 https://<user>.github.io/<repo>/apps/athleter/impressum.html
 https://<user>.github.io/<repo>/apps/athleter/impressum-de.html  ← German Impressum
 https://<user>.github.io/<repo>/apps/athleter/impressum-fr.html
+https://<user>.github.io/<repo>/apps/athleter/parental-consent-template.html
+https://<user>.github.io/<repo>/apps/athleter/parental-consent-template-de.html
+https://<user>.github.io/<repo>/apps/athleter/parental-consent-template-fr.html
 https://<user>.github.io/<repo>/apps/athleter/delete-account.html  ← Google Play account deletion
 https://<user>.github.io/<repo>/apps/athleter/delete-data.html     ← Google Play partial data deletion
 ```
