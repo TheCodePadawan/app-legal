@@ -37,8 +37,7 @@
           <nav class="nav" aria-label="Hauptnavigation">
             <a href="privacy-de.html">Datenschutz</a>
             <a href="terms-de.html">Bedingungen</a>
-            <a href="avv-de.html">AVV</a>
-            <a href="impressum-de.html">Impressum</a>
+            <a href="../../impressum-de.html">Impressum</a>
           </nav>
         </div>
       </div>
@@ -55,7 +54,7 @@
       </aside>
 
       <article class="doc-main">
-        <h1>Einwilligungsvorlage für Erziehungsberechtigte</h1>
+        <h1 class="screen-only">Einwilligungsvorlage für Erziehungsberechtigte</h1>
         <p class="doc-meta">
           <span
             >Zuletzt aktualisiert:
@@ -63,7 +62,7 @@
           >
         </p>
 
-        <p class="note">
+        <p class="note screen-only">
           Entwurf, keine Rechtsberatung. Diese Vorlage soll das
           Einholen einer eigenen Rechtsgrundlage für die Erfassung von
           Athletendaten erleichtern (siehe <a href="avv-de.html">AVV</a>
@@ -75,9 +74,19 @@
           Situation an, bevor Sie sie verwenden.
         </p>
 
-        <h2 id="s1">1. Für wen ist das</h2>
+        <p class="doc-actions no-print">
+          <button type="button" class="btn btn-primary" data-print>
+            Drucken / Als PDF speichern
+          </button>
+        </p>
+        <p class="note no-print" style="margin-top: 0">
+          Im Druckdialog „Als PDF speichern“ wählen. Die Kästchen sind für
+          Papier — ankreuzen nach dem Drucken, nicht auf dieser Seite.
+        </p>
 
-        <p>
+        <h2 id="s1" class="screen-only">1. Für wen ist das</h2>
+
+        <p class="screen-only">
           Für Trainer, die AthleteR nutzen, um Daten über einen
           minderjährigen Athleten zu erfassen, und die dafür eine
           dokumentierte Einwilligung der Erziehungsberechtigten einholen
@@ -87,15 +96,15 @@
           auf AthleteR in diesem bestehenden Verfahren.
         </p>
 
-        <h2 id="s2">2. Vorlage (zum Ausdrucken oder Kopieren)</h2>
+        <h2 id="s2" class="screen-only">2. Vorlage (zum Ausdrucken oder Kopieren)</h2>
 
-        <div class="note">
-          <p><strong>Einwilligung zur Erfassung von Athletendaten in AthleteR</strong></p>
+        <div class="paper-form">
+          <h3>Einwilligung zur Erfassung von Athletendaten in AthleteR</h3>
 
           <p>
-            Trainer/Verein: ______________________________<br />
-            Athlet (Name): ______________________________<br />
-            Geburtsdatum des Athleten: ______________________________
+            <span class="blank-line">Trainer/Verein: ______________________________</span>
+            <span class="blank-line">Athlet (Name): ______________________________</span>
+            <span class="blank-line">Geburtsdatum des Athleten: ______________________________</span>
           </p>
 
           <p>
@@ -107,13 +116,9 @@
             Profilfoto.
           </p>
 
-          <p>
-            <label>
-              <input type="checkbox" /> Ich/Wir stimme(n) der Erfassung
-              dieser Daten durch den oben genannten Trainer/Verein in der
-              App AthleteR zu, zum Zweck der Trainingsplanung und
-              Leistungsverfolgung.
-            </label>
+          <p class="consent-line">
+            <span class="tick" aria-hidden="true"></span>
+            <span>Ich/Wir stimme(n) der Erfassung dieser Daten durch den oben genannten Trainer/Verein in der App AthleteR zu, zum Zweck der Trainingsplanung und Leistungsverfolgung.</span>
           </p>
 
           <p>
@@ -124,12 +129,9 @@
             medizinische Diagnose.
           </p>
 
-          <p>
-            <label>
-              <input type="checkbox" /> Ich/Wir stimme(n) zusätzlich der
-              Erfassung körperlicher Messwerte und der Berechnung dieser
-              BMI-Referenzeinordnung zu.
-            </label>
+          <p class="consent-line">
+            <span class="tick" aria-hidden="true"></span>
+            <span>Ich/Wir stimme(n) zusätzlich der Erfassung körperlicher Messwerte und der Berechnung dieser BMI-Referenzeinordnung zu.</span>
           </p>
 
           <p>
@@ -140,15 +142,15 @@
           </p>
 
           <p>
-            Name Erziehungsberechtigte(r): ______________________________<br />
-            Datum: ______________________________<br />
-            Unterschrift: ______________________________
+            <span class="blank-line">Name Erziehungsberechtigte(r): ______________________________</span>
+            <span class="blank-line">Datum: ______________________________</span>
+            <span class="blank-line">Unterschrift: ______________________________</span>
           </p>
         </div>
 
-        <h2 id="s3">3. Hinweise zur Nutzung</h2>
+        <h2 id="s3" class="screen-only">3. Hinweise zur Nutzung</h2>
 
-        <p>
+        <p class="screen-only">
           Diese Vorlage regelt nur das Verhältnis zwischen Ihnen (Trainer/
           Verein) und den Erziehungsberechtigten — sie ändert nichts an der
           Beziehung zwischen Ihnen und AthleteR, die weiterhin über unseren
@@ -169,9 +171,7 @@
         <span>
           <a href="../../index.html">Start</a>
           ·
-          <a href="avv-de.html">AVV</a>
-          ·
-          <a href="impressum-de.html">Impressum</a>
+          <a href="../../impressum-de.html">Impressum</a>
         </span>
       </div>
     </footer>

@@ -1,81 +1,65 @@
 # Publisher legal site (GitHub Pages)
 
-Privacy Policy, Terms, Data Processing Agreement (AVV), and Impressum for
-**AthleteR** store listings. Shared company config in one place; per-app
-policy URLs under `apps/`. More apps can be added later when their policies
-are ready.
+Shared company pages plus per-app policies. **AthleteR is the first app**, not
+the whole site. Add more products later under `apps/<id>/`.
 
 ```
 /
-  index.html                 ← hub
-  privacy.html / terms.html / impressum.html  ← redirects → AthleteR
-  assets/js/config.js        ← edit publisher + per-app notes HERE
-  apps/
-    athleter/privacy.html       ← EN (canonical store URL)
-    athleter/privacy-de.html    ← DE Datenschutzerklärung
-    athleter/privacy-fr.html    ← FR Politique de confidentialité
-    athleter/terms.html         ← EN (canonical store URL)
-    athleter/terms-de.html      ← DE Nutzungsbedingungen
-    athleter/terms-fr.html      ← FR Conditions d'utilisation
-    athleter/avv.html           ← EN Data Processing Agreement (convenience translation)
-    athleter/avv-de.html        ← DE Auftragsverarbeitungsvertrag (Art. 28 DSGVO) — legally controlling
-    athleter/avv-fr.html        ← FR Accord de traitement des données
-    athleter/impressum.html     ← EN legal notice
-    athleter/impressum-de.html  ← DE Impressum (§ 5 DDG) — legally relevant
-    athleter/impressum-fr.html  ← FR mentions légales
-    athleter/parental-consent-template.html     ← EN — practical tool for coaches, not a legal doc about us
-    athleter/parental-consent-template-de.html  ← DE
-    athleter/parental-consent-template-fr.html  ← FR
-    athleter/delete-account.html  ← Google Play account deletion
-    athleter/delete-data.html     ← Google Play partial data deletion
+  index.html                 ← publisher hub (list of apps)
+  impressum.html             ← EN legal notice
+  impressum-de.html          ← DE Impressum (§ 5 DDG) — legally relevant
+  impressum-fr.html          ← FR mentions légales
+  privacy.html / terms.html  ← shortcuts → AthleteR (first app only)
+  assets/js/config.js        ← publisher + per-app values
+  apps/athleter/
+    index.html               ← AthleteR legal home
+    privacy / terms          ← EN, -de, -fr
+    avv / avv-de / avv-fr    ← DPA (Art. 28 GDPR); German text controls
+    parental-consent-template*.html
+    delete-account.html / delete-data.html
+    impressum*.html          ← redirects → publisher Impressum
 ```
 
 **Not legal advice.** Have a lawyer review before store submission.
 
+## What belongs where
+
+| Page | Level | In the top bar? |
+|------|--------|-----------------|
+| Impressum | Publisher (same company for every app) | Yes — hub + every app bar |
+| Privacy / Terms | Per app | Yes — on that app’s pages only |
+| DPA / AVV | AthleteR only (coach = controller) | No — linked from Privacy, Terms, and the AthleteR home |
+| Parental consent template | AthleteR coach tool | No — AthleteR home |
+| Delete account / data | Play Console URLs | No — AthleteR home |
+
+Every AthleteR document uses the same bar: **Privacy · Terms · Impressum**.
+The DPA is not a fourth tab.
+
 ## Edit once
 
-`assets/js/config.js` → `publisher`:
+`assets/js/config.js` → `publisher` (company name, address, phone, VAT, …).
 
-- company name, business type, country
-- represented by (owner / managing director)
-- contact email / address / phone
-- website
-- VAT ID and commercial register (if a limited company; leave placeholder if not)
-- governing law, liability cap
-- DPO (or leave bracketed)
+`apps.athleter` holds AthleteR-only fields (`name`, `tagline`, `website`).
 
-Orange dashed text on pages comes from values that still start with `[`.
-
-## AthleteR
-
-AthleteR has full EN / DE / FR text under `apps/athleter/`. Each legal page
-includes an EN|DE|FR language switcher. Fill remaining bracketed placeholders
-in `config.js` before relying on these pages in Germany (Impressum) or for
-store submission.
+Orange dashed text still starts with `[`.
 
 ## Store URLs
 
-After Pages is live (English remains the canonical Play store URL for privacy):
+Play Console (AthleteR):
 
 ```
 https://<user>.github.io/<repo>/apps/athleter/privacy.html
-https://<user>.github.io/<repo>/apps/athleter/privacy-de.html
-https://<user>.github.io/<repo>/apps/athleter/privacy-fr.html
-https://<user>.github.io/<repo>/apps/athleter/terms.html
-https://<user>.github.io/<repo>/apps/athleter/terms-de.html
-https://<user>.github.io/<repo>/apps/athleter/terms-fr.html
-https://<user>.github.io/<repo>/apps/athleter/avv.html
-https://<user>.github.io/<repo>/apps/athleter/avv-de.html         ← legally controlling text
-https://<user>.github.io/<repo>/apps/athleter/avv-fr.html
-https://<user>.github.io/<repo>/apps/athleter/impressum.html
-https://<user>.github.io/<repo>/apps/athleter/impressum-de.html  ← German Impressum
-https://<user>.github.io/<repo>/apps/athleter/impressum-fr.html
-https://<user>.github.io/<repo>/apps/athleter/parental-consent-template.html
-https://<user>.github.io/<repo>/apps/athleter/parental-consent-template-de.html
-https://<user>.github.io/<repo>/apps/athleter/parental-consent-template-fr.html
-https://<user>.github.io/<repo>/apps/athleter/delete-account.html  ← Google Play account deletion
-https://<user>.github.io/<repo>/apps/athleter/delete-data.html     ← Google Play partial data deletion
+https://<user>.github.io/<repo>/apps/athleter/delete-account.html
+https://<user>.github.io/<repo>/apps/athleter/delete-data.html
 ```
+
+Impressum (German, publisher-level):
+
+```
+https://<user>.github.io/<repo>/impressum-de.html
+```
+
+Old `…/apps/athleter/impressum-de.html` still redirects there.
 
 ## Preview
 
@@ -92,7 +76,7 @@ GitHub → **Settings → Pages** → branch **`main`** / folder **`/`**.
 
 ## Add another app later
 
-1. Add `apps/<new-id>/` with `privacy.html` and `terms.html`
-2. Set `data-app="<new-id>"` on `<body>` in both HTML files
-3. Add an entry under `apps` in `config.js` (catalog is derived from `Object.keys`)
-4. Fill placeholders; mark `status: "ready"` when the text is real
+1. Add `apps/<new-id>/` with at least `index.html`, `privacy.html`, `terms.html`
+2. Set `data-app="<new-id>"` on those pages
+3. Add an entry under `apps` in `config.js`
+4. Do **not** put that app’s extra docs (DPA, deletion, …) in the hub nav

@@ -37,8 +37,7 @@
           <nav class="nav" aria-label="Principale">
             <a href="privacy-fr.html">Confidentialité</a>
             <a href="terms-fr.html">Conditions</a>
-            <a href="avv-fr.html">AVV</a>
-            <a href="impressum-fr.html">Impressum</a>
+            <a href="../../impressum-fr.html">Mentions légales</a>
           </nav>
         </div>
       </div>
@@ -55,7 +54,7 @@
       </aside>
 
       <article class="doc-main">
-        <h1>Modèle de consentement parental</h1>
+        <h1 class="screen-only">Modèle de consentement parental</h1>
         <p class="doc-meta">
           <span
             >Dernière mise à jour :
@@ -63,7 +62,7 @@
           >
         </p>
 
-        <p class="note">
+        <p class="note screen-only">
           Brouillon, ne constitue pas un conseil juridique. Ce modèle vise
           à faciliter l'obtention de votre propre base légale pour
           enregistrer les données d'un athlète (voir l'<a href="avv-fr.html">AVV</a>,
@@ -74,9 +73,20 @@
           Adaptez ce modèle à votre situation avant de l'utiliser.
         </p>
 
-        <h2 id="s1">1. Pour qui</h2>
+        <p class="doc-actions no-print">
+          <button type="button" class="btn btn-primary" data-print>
+            Imprimer / Enregistrer en PDF
+          </button>
+        </p>
+        <p class="note no-print" style="margin-top: 0">
+          Dans la boîte de dialogue d'impression, choisissez « Enregistrer
+          au format PDF ». Les cases sont destinées au papier — cochez-les
+          après impression, pas sur cette page.
+        </p>
 
-        <p>
+        <h2 id="s1" class="screen-only">1. Pour qui</h2>
+
+        <p class="screen-only">
           Pour les entraîneurs utilisant AthleteR pour enregistrer des
           données sur un athlète mineur et qui souhaitent ou doivent
           disposer d'un consentement parental documenté. Non nécessaire si
@@ -85,15 +95,15 @@
           existant suffit généralement.
         </p>
 
-        <h2 id="s2">2. Modèle (à imprimer ou copier)</h2>
+        <h2 id="s2" class="screen-only">2. Modèle (à imprimer ou copier)</h2>
 
-        <div class="note">
-          <p><strong>Consentement à l'enregistrement des données d'un athlète dans AthleteR</strong></p>
+        <div class="paper-form">
+          <h3>Consentement à l'enregistrement des données d'un athlète dans AthleteR</h3>
 
           <p>
-            Entraîneur/Club : ______________________________<br />
-            Athlète (nom) : ______________________________<br />
-            Date de naissance de l'athlète : ______________________________
+            <span class="blank-line">Entraîneur/Club : ______________________________</span>
+            <span class="blank-line">Athlète (nom) : ______________________________</span>
+            <span class="blank-line">Date de naissance de l'athlète : ______________________________</span>
           </p>
 
           <p>
@@ -105,13 +115,9 @@
             d'entraînement, et éventuellement une photo de profil.
           </p>
 
-          <p>
-            <label>
-              <input type="checkbox" /> Je/nous consens/consentons à ce que
-              l'entraîneur/le club ci-dessus enregistre ces données dans
-              l'application AthleteR, à des fins de planification
-              d'entraînement et de suivi de la performance.
-            </label>
+          <p class="consent-line">
+            <span class="tick" aria-hidden="true"></span>
+            <span>Je/nous consens/consentons à ce que l'entraîneur/le club ci-dessus enregistre ces données dans l'application AthleteR, à des fins de planification d'entraînement et de suivi de la performance.</span>
           </p>
 
           <p>
@@ -122,12 +128,9 @@
             l'entraînement, non d'un diagnostic médical.
           </p>
 
-          <p>
-            <label>
-              <input type="checkbox" /> Je/nous consens/consentons en outre
-              à l'enregistrement des mesures physiques et au calcul de
-              cette classification IMC de référence.
-            </label>
+          <p class="consent-line">
+            <span class="tick" aria-hidden="true"></span>
+            <span>Je/nous consens/consentons en outre à l'enregistrement des mesures physiques et au calcul de cette classification IMC de référence.</span>
           </p>
 
           <p>
@@ -138,15 +141,15 @@
           </p>
 
           <p>
-            Nom du représentant légal : ______________________________<br />
-            Date : ______________________________<br />
-            Signature : ______________________________
+            <span class="blank-line">Nom du représentant légal : ______________________________</span>
+            <span class="blank-line">Date : ______________________________</span>
+            <span class="blank-line">Signature : ______________________________</span>
           </p>
         </div>
 
-        <h2 id="s3">3. Notes d'utilisation</h2>
+        <h2 id="s3" class="screen-only">3. Notes d'utilisation</h2>
 
-        <p>
+        <p class="screen-only">
           Ce modèle régit uniquement la relation entre vous (entraîneur/
           club) et le représentant légal — il ne modifie pas votre propre
           relation avec AthleteR, toujours régie par notre
@@ -166,9 +169,7 @@
         <span>
           <a href="../../index.html">Accueil</a>
           ·
-          <a href="avv-fr.html">AVV</a>
-          ·
-          <a href="impressum-fr.html">Impressum</a>
+          <a href="../../impressum-fr.html">Mentions légales</a>
         </span>
       </div>
     </footer>

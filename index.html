@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Legal — AthleteR</title>
+    <title>Legal — publisher hub</title>
     <meta
       name="description"
-      content="Privacy Policy, Terms of Service, and data deletion for AthleteR."
+      content="Legal pages for our apps: privacy, terms, and Impressum."
     />
     <link rel="icon" href="assets/images/icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,11 +25,8 @@
           <span>Legal</span>
         </a>
         <nav class="nav" aria-label="Primary">
-          <a href="apps/athleter/">AthleteR</a>
-          <a href="apps/athleter/privacy.html">Privacy</a>
-          <a href="apps/athleter/terms.html">Terms</a>
-          <a href="apps/athleter/avv.html">DPA</a>
-          <a href="apps/athleter/impressum.html">Impressum</a>
+          <a href="#apps">Apps</a>
+          <a href="impressum.html">Impressum</a>
         </nav>
       </div>
     </header>
@@ -37,68 +34,10 @@
     <main>
       <section class="hero wrap">
         <p class="hero-kicker">Publisher legal hub</p>
-        <h1>AthleteR<br />legal pages.</h1>
+        <h1>Legal pages<br />for our apps.</h1>
         <p class="lede">
-          Policies and deletion instructions for store listings — one hub,
-          separate URLs where Google Play requires them.
-        </p>
-
-        <div class="cta-groups">
-          <fieldset class="cta-group">
-            <legend>Policies</legend>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="apps/athleter/privacy.html"
-                >Privacy Policy</a
-              >
-              <a class="btn btn-ghost" href="apps/athleter/terms.html"
-                >Terms of Service</a
-              >
-              <a class="btn btn-ghost" href="apps/athleter/avv.html"
-                >Data Processing Agreement</a
-              >
-              <a class="btn btn-ghost" href="apps/athleter/impressum-de.html"
-                >Impressum</a
-              >
-            </div>
-          </fieldset>
-
-          <fieldset class="cta-group">
-            <legend>Your data</legend>
-            <div class="cta-row">
-              <a class="btn btn-ghost" href="apps/athleter/delete-account.html"
-                >Delete account</a
-              >
-              <a class="btn btn-ghost" href="apps/athleter/delete-data.html"
-                >Delete data (keep account)</a
-              >
-            </div>
-          </fieldset>
-        </div>
-      </section>
-
-      <section class="wrap panel" aria-labelledby="urls">
-        <h2 id="urls">Play Console URLs</h2>
-        <ul>
-          <li>
-            Privacy:
-            <code>…/apps/athleter/privacy.html</code>
-          </li>
-          <li>
-            Delete account:
-            <code>…/apps/athleter/delete-account.html</code>
-          </li>
-          <li>
-            Delete data:
-            <code>…/apps/athleter/delete-data.html</code>
-          </li>
-          <li>
-            Impressum (German legal notice, not a Play field):
-            <code>…/apps/athleter/impressum-de.html</code>
-          </li>
-        </ul>
-        <p>
-          Edit company placeholders in
-          <code>assets/js/config.js</code>.
+          Company details are shared. Privacy, terms, and store URLs live
+          under each app.
         </p>
       </section>
 
@@ -115,6 +54,15 @@
         </h2>
         <div class="app-grid" data-app-catalog></div>
       </section>
+
+      <section class="wrap panel" aria-labelledby="edit">
+        <h2 id="edit">Company placeholders</h2>
+        <p>
+          Edit name, address, and contact once in
+          <code>assets/js/config.js</code> → <code>publisher</code>. Orange
+          dashed text on any page still needs a real value.
+        </p>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -123,11 +71,7 @@
           >&copy;
           <span data-legal="companyLegalName">[Company Legal Name]</span></span
         >
-        <span
-          ><a href="apps/athleter/">AthleteR legal home</a>
-          ·
-          <a href="apps/athleter/impressum-de.html">Impressum</a></span
-        >
+        <span><a href="impressum-de.html">Impressum</a></span>
       </div>
     </footer>
 

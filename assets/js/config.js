@@ -13,13 +13,14 @@ window.LEGAL_SITE = {
     contactEmail: "[contact email]",
     contactAddress: "[contact address]",
     phone: "[phone number]",
-    website: "https://www.athleter.app",
+    website: "[publisher website]",
     vatId: "[USt-IdNr / VAT ID, if applicable]",
     registerCourt: "[Handelsregister court, if limited company — otherwise leave]",
     registerNumber: "[HRB / register number, if limited company — otherwise leave]",
     dpoContact: "[DPO/representative contact, if applicable]",
     governingLaw: "[Governing Law Jurisdiction]",
     liabilityCap: "[PLACEHOLDER AMOUNT, e.g. FIFTY EUROS / US DOLLARS]",
+    lastUpdated: "[Date]",
   },
 
   /**
@@ -33,6 +34,7 @@ window.LEGAL_SITE = {
       tagline: "Coach-first athlete performance tracking",
       status: "ready",
       lastUpdated: "[Date]",
+      website: "https://www.athleter.app",
       path: "apps/athleter/",
     },
   },
