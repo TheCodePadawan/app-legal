@@ -6,21 +6,26 @@
  */
 window.LEGAL_SITE = {
   publisher: {
-    companyLegalName: "[Company Legal Name]",
-    businessType: "[business type, e.g. sole proprietorship / limited company]",
-    countryState: "[Country/State of Incorporation]",
-    representedBy: "[full name — owner or managing director]",
-    contactEmail: "[contact email]",
-    contactAddress: "[contact address]",
-    phone: "[phone number]",
-    website: "[publisher website]",
-    vatId: "[USt-IdNr / VAT ID, if applicable]",
-    registerCourt: "[Handelsregister court, if limited company — otherwise leave]",
-    registerNumber: "[HRB / register number, if limited company — otherwise leave]",
-    dpoContact: "[DPO/representative contact, if applicable]",
-    governingLaw: "[Governing Law Jurisdiction]",
-    liabilityCap: "[PLACEHOLDER AMOUNT, e.g. FIFTY EUROS / US DOLLARS]",
-    lastUpdated: "[Date]",
+    companyLegalName: "Haris Harcevic",
+    // Geschäftsbezeichnung only — not a registered Firma (kein HR-Eintrag).
+    tradeName: "Neo Intellectus",
+    businessType: "Einzelunternehmen (Kleinunternehmer gemäß § 19 UStG)",
+    countryState: "Deutschland",
+    representedBy: "Haris Harcevic",
+    contactEmail: "info@neointellectus.com",
+    // AthleteR inbox; forwarded to contactEmail.
+    appContactEmail: "contact@athleter.app",
+    contactAddress: "Lange Str. 6, 89233 Neu-Ulm, Deutschland",
+    phone: "+49 160 3491053",
+    website: "https://www.athleter.app",
+    // W-IdNr after § 139c AO — not a USt-IdNr. Kleinunternehmer; no VAT ID issued.
+    vatId: "DE424566302-00001",
+    registerCourt: "nicht eingetragen",
+    registerNumber: "nicht eingetragen",
+    dpoContact: "Kein Datenschutzbeauftragter bestellt",
+    governingLaw: "Deutschland",
+    liabilityCap: "50 EUR",
+    lastUpdated: "30 August 2026",
   },
 
   /**
@@ -33,7 +38,7 @@ window.LEGAL_SITE = {
       name: "AthleteR",
       tagline: "Coach-first athlete performance tracking",
       status: "ready",
-      lastUpdated: "[Date]",
+      lastUpdated: "30 August 2026",
       website: "https://www.athleter.app",
       path: "apps/athleter/",
     },

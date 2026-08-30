@@ -45,8 +45,9 @@
     setText(el, app[key], "apps." + appId + "." + key);
   });
 
-  document.querySelectorAll('a[data-legal-mailto="contactEmail"]').forEach((a) => {
-    const email = publisher.contactEmail;
+  document.querySelectorAll("a[data-legal-mailto]").forEach((a) => {
+    const key = a.getAttribute("data-legal-mailto");
+    const email = key ? publisher[key] : null;
     if (email && !looksPlaceholder(email)) {
       a.href = "mailto:" + email;
     }

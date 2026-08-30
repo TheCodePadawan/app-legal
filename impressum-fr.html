@@ -65,7 +65,7 @@
         </p>
 
         <p class="note">
-          Identification de l'éditeur exigée par le droit allemand (§ 5 DDG, anciennement § 5 TMG). Ces mentions concernent l'éditeur, pas une seule application. Le texte orange en pointillés est un espace réservé — modifiez <code>assets/js/config.js</code>. La version allemande fait foi.
+          Identification de l'éditeur exigée par le droit allemand (§ 5 DDG, anciennement § 5 TMG). Ces mentions concernent l'éditeur, pas une seule application. Un texte orange en pointillés indiquerait encore un espace réservé. La version allemande fait foi.
         </p>
 
         <h2 id="s1">1. Éditeur du service</h2>
@@ -73,6 +73,8 @@
         <dl>
           <dt>Éditeur des applications listées sur ce site</dt>
           <dd data-legal="companyLegalName">[Raison sociale]</dd>
+          <dt>Nom commercial</dt>
+          <dd data-legal="tradeName">[nom commercial]</dd>
           <dt>Forme juridique</dt>
           <dd data-legal="businessType">[forme juridique, p. ex. entreprise individuelle / SARL]</dd>
           <dt>Adresse</dt>
@@ -85,7 +87,7 @@
 
         <p>
           Publié actuellement ici : <a href="apps/athleter/">AthleteR</a>.
-          Le droit allemand exige une adresse physique (pas une boîte postale).
+          <span data-legal="tradeName">Neo Intellectus</span> est un nom commercial (Geschäftsbezeichnung), pas une société inscrite au registre du commerce.
         </p>
 
         <h2 id="s2">2. Contact</h2>
@@ -96,6 +98,13 @@
             <a data-legal-mailto="contactEmail" href="#"
               ><span data-legal="contactEmail">[e-mail]</span></a
             >
+          </dd>
+          <dt>E-mail (AthleteR)</dt>
+          <dd>
+            <a data-legal-mailto="appContactEmail" href="#"
+              ><span data-legal="appContactEmail">[e-mail de l'app]</span></a
+            >
+            — transféré vers l'e-mail de l'éditeur.
           </dd>
           <dt>Téléphone</dt>
           <dd>
@@ -114,17 +123,14 @@
         <h2 id="s3">3. Registre et mentions fiscales</h2>
 
         <p>
-          À remplir uniquement si cela s'applique. Une entreprise individuelle sans inscription au registre du commerce peut laisser ces champs en placeholder, ou les remplacer plus tard par « non inscrit ».
+          En tant que petite entreprise (Kleinunternehmer selon le § 19 UStG), aucun numéro d'identification à la TVA allemand n'a été attribué. Le Wirtschafts-Identifikationsnummer prévu à l'article 139c AO est publié à la place (§ 5 al. 1 n° 6 DDG).
         </p>
 
         <dl>
           <dt>Registre du commerce</dt>
-          <dd>
-            <span data-legal="registerCourt">[tribunal du registre]</span>,
-            <span data-legal="registerNumber">[numéro HRB]</span>
-          </dd>
-          <dt>N° de TVA</dt>
-          <dd data-legal="vatId">[USt-IdNr / n° de TVA, s'il a été attribué]</dd>
+          <dd data-legal="registerCourt">[non inscrit]</dd>
+          <dt>Numéro d'identification économique (W-IdNr.)</dt>
+          <dd data-legal="vatId">[W-IdNr.]</dd>
         </dl>
 
         <h2 id="s4">4. Responsable du contenu</h2>

@@ -65,7 +65,7 @@
         </p>
 
         <p class="note">
-          Provider identification required under German law (§ 5 DDG, formerly § 5 TMG). This notice is for the publisher, not a single app. Orange dashed text is a placeholder — edit <code>assets/js/config.js</code>. The German page is the legally relevant version.
+          Provider identification required under German law (§ 5 DDG, formerly § 5 TMG). This notice is for the publisher, not a single app. Orange dashed text would be an open placeholder. The German page is the legally relevant version.
         </p>
 
         <h2 id="s1">1. Service provider</h2>
@@ -73,6 +73,8 @@
         <dl>
           <dt>Provider of the apps listed on this site</dt>
           <dd data-legal="companyLegalName">[Company Legal Name]</dd>
+          <dt>Trading name</dt>
+          <dd data-legal="tradeName">[trading name]</dd>
           <dt>Legal form</dt>
           <dd data-legal="businessType">[business type, e.g. sole proprietorship / limited company]</dd>
           <dt>Address</dt>
@@ -85,7 +87,7 @@
 
         <p>
           Currently published here: <a href="apps/athleter/">AthleteR</a>.
-          German law requires a physical service address (not a PO box).
+          <span data-legal="tradeName">Neo Intellectus</span> is a trading name (Geschäftsbezeichnung), not a company entered in the commercial register.
         </p>
 
         <h2 id="s2">2. Contact</h2>
@@ -96,6 +98,13 @@
             <a data-legal-mailto="contactEmail" href="#"
               ><span data-legal="contactEmail">[contact email]</span></a
             >
+          </dd>
+          <dt>Email (AthleteR)</dt>
+          <dd>
+            <a data-legal-mailto="appContactEmail" href="#"
+              ><span data-legal="appContactEmail">[app email]</span></a
+            >
+            — forwarded to the publisher email.
           </dd>
           <dt>Phone</dt>
           <dd>
@@ -114,17 +123,14 @@
         <h2 id="s3">3. Register and tax details</h2>
 
         <p>
-          Fill these in only if they apply. A sole proprietor with no commercial-register entry can leave the register fields as placeholders, or later replace them with “not registered”.
+          As a small-business operator (Kleinunternehmer under § 19 UStG) no German VAT identification number has been issued. The Wirtschafts-Identifikationsnummer under § 139c AO is published instead (§ 5 (1) no. 6 DDG).
         </p>
 
         <dl>
           <dt>Commercial register</dt>
-          <dd>
-            <span data-legal="registerCourt">[register court]</span>,
-            <span data-legal="registerNumber">[HRB / register number]</span>
-          </dd>
-          <dt>VAT ID</dt>
-          <dd data-legal="vatId">[USt-IdNr / VAT ID, if issued]</dd>
+          <dd data-legal="registerCourt">[not registered]</dd>
+          <dt>Business identification number (W-IdNr.)</dt>
+          <dd data-legal="vatId">[W-IdNr.]</dd>
         </dl>
 
         <h2 id="s4">4. Responsible for content</h2>
